@@ -3,10 +3,14 @@ package com.mygroup.ej1.POJO;
 public class Aritmetica {
 
     public float Division(float dividendo, float divisor) {
-        return dividendo / divisor;
+        if (dividendo == 0 || divisor == 0) {
+            return 0.00f;
+        } else {
+            return dividendo / divisor;
+        }
     }
 
-    public int[] PrimerosTresDivisores(int num) {
+    int[] PrimerosTresDivisores(int num) {
         // Variables
         int contador = 0;
         int[] numDivisible = new int[3];
@@ -17,10 +21,10 @@ public class Aritmetica {
                 contador++;
             }
         }
-        
+
         if (contador < numDivisible.length) {
             for (int i = contador; i < numDivisible.length; i++) {
-                numDivisible[i]=-1;
+                numDivisible[i] = -1;
             }
         }
         return numDivisible;
