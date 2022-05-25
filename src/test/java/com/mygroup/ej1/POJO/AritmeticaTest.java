@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.mygroup.ej1.POJO;
 
 import org.junit.After;
@@ -9,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author DAW
+ * @author Usuario
  */
 public class AritmeticaTest {
     
@@ -38,10 +43,10 @@ public class AritmeticaTest {
     @Test
     public void testDivision() {
         System.out.println("Division");
-        float dividendo = 8F;
-        float divisor = 4F;
+        float dividendo = 8.0F;
+        float divisor = 4.0F;
         Aritmetica instance = new Aritmetica();
-        float expResult = 2F;
+        float expResult = 2.0F;
         float result = instance.Division(dividendo, divisor);
         assertEquals(expResult, result, 0.0);
     }
